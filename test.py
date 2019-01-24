@@ -5,7 +5,6 @@ class AHP:
     def __init__(self, array):  # array是每个指标下面对应的判断矩阵，即原始数据
         self.row = len(array)  # 计算矩阵的行数
         self.col = len(array[0])  # 计算矩阵的列数
-        self.array = array
 
     def get_tezheng(self, array):  # 获取最大特征值和对应的特征向量
             te_val, te_vector = np.linalg.eig(array)  # numpy.linalg.eig() 计算矩阵特征值与特征向量
@@ -48,7 +47,7 @@ class AHP:
                 vector_after_normalization.append((max_vector[i]/sum0))
 
             print("该级指标的权重矩阵为：  " + str(vector_after_normalization))
-            return vector_after_normalization
+            return vector_after_normalization 
         
     def weightCalculator(self, normalMatrix):  # 计算最终指标对应的权重值
         # layers weight calculations.
@@ -68,3 +67,4 @@ if __name__ == "__main__":
     array = [[1, 2, 4], [0.5, 1, 5], [0.25, 0.2, 1]]
     ahp = AHP(array)
     ahp.get_tezheng(array)
+    ahp.weightCalculator(ahp.normalMatri)
