@@ -110,7 +110,7 @@ class AHP_method:
 
 
 if __name__ == "__main__":
-    path = "D://code//tmp//data.csv"
+    path = "D://code//ICM//algorithms//data//ahp1.csv"
     method = AHP_method(path)
     result = method.test_consitstence()
     w0 = result[0]
