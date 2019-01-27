@@ -1,0 +1,5 @@
+ (258040, 80124, 59449, 32130, 42885)
+print((count_red, count_green_shallow, count_green_deep, count_orange, count_purple))
+result = [rc, transport, industrial, reservation, algriculture]
+[258040, 75015, 0, 59449, 80124]
+[ 0.5459685   0.15871891  0.          0.12578391  0.16952868]
