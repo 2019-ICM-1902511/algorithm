@@ -6,8 +6,8 @@ import scipy.misc
 
 tmp = read_data.read_tmp()
 l, wi = tmp.shape
-X = tmp[:, 0:7]
-kmeans = KMeans(n_clusters=2, random_state=0).fit(X)
+X = tmp[:, 2:7]
+kmeans = KMeans(n_clusters=30, random_state=0).fit(X)
 labels = kmeans.labels_
 labels = labels.reshape((l, 1))
 
