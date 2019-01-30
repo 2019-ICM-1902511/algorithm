@@ -32,6 +32,20 @@ def read_tmp():
     return l0
 
 
+def read_result():
+    path = "D:\\code\\ICM\\algorithms\\big_problem\\data\\result.csv"
+    l0 = np.loadtxt(open(path, "rb"), delimiter=",", skiprows=0)
+    l0 = np.array(l0)
+    return l0
+
+
+def read_centers():
+    path = "D:\\code\\ICM\\algorithms\\big_problem\\data\\centers.csv"
+    l0 = np.loadtxt(open(path, "rb"), delimiter=",", skiprows=0)
+    l0 = np.array(l0)
+    return l0
+
+
 if __name__ == "__main__":
     tmp = read_tmp()
     print(tmp)
